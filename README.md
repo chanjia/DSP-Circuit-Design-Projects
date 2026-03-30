@@ -40,9 +40,9 @@ This repository contains hardware and simulation projects for digital signal pro
 
 ### c. Verilog Code Simulation
 - **Description:** Hardware implementation of FIR filter in Verilog and simulation with testbench.
-- **Files:** `verilog_code/HW5_2/`
+- **Files:** `verilog_code/Low-pass_filter_design/`
 
 
 ### d. Verification
 - **Description:** Verification script to compare fixed-point MATLAB simulation and Verilog simulation results.
-- **File:** `verilog_code/HW5_2/do_fir/check.m`
+- **File:** `verilog_code/Low-pass_filter_design/do_fir/check.m`
