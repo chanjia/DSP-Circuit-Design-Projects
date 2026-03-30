@@ -6,10 +6,14 @@ This repository contains hardware and simulation projects for digital signal pro
 
 ## 1. Baugh-Wooley Multiplier
 
-- **Description:** Implementation of a signed array multiplier using Baugh-Wooley architecture in Verilog.
-- **Files:** `verilog_code/HW5_1/`
-- **Skills Demonstrated:** Digital arithmetic, Verilog HDL, hardware multiplier design.
-
+- **Description:** Implementation of a 8x6 Baugh-Wooley multiplier in Verilog.
+- **Files:** `verilog_code/Baugh-Wooley_multiplier/`
+<p align="center">
+  <img src="fig/long_multiplication_chart_of_an_8x6_Baugh-Wooley.jpeg">
+</p>
+<p align="center">
+  <img src="fig/architecture_of_the_8x6_Wallace-Tree_multiplier.jpeg">
+</p>
 ---
 
 ## 2. Low-Pass Filter Design
@@ -17,31 +21,28 @@ This repository contains hardware and simulation projects for digital signal pro
 ### a. Floating-Point Simulation
 - **Description:** Design and simulation of low-pass FIR filter using floating-point arithmetic in MATLAB.
 - **File:** `matlab_code/filter_design.m`
-- **Skills:** MATLAB, filter design, signal processing.
+<p align="center">
+  <img src="fig/FIR_filter.jpeg">
+</p>
+<p align="center">
+  <img src="fig/frequency_response_of_FIR_filter.jpeg">
+</p>
+<p align="center">
+  <img src="fig/spectrum.jpeg">
+</p>
 
 ### b. Fixed-Point Simulation
 - **Description:** Fixed-point simulation of the FIR filter to evaluate quantization effects.
 - **File:** `matlab_code/fixed-point.m`
-- **Skills:** Fixed-point arithmetic, DSP optimization.
+<p align="center">
+  <img src="fig/SNR.jpeg">
+</p>
 
 ### c. Verilog Code Simulation
 - **Description:** Hardware implementation of FIR filter in Verilog and simulation with testbench.
 - **Files:** `verilog_code/HW5_2/`
-- **Skills:** Verilog HDL, FIR hardware design, simulation.
+
 
 ### d. Verification
 - **Description:** Verification script to compare fixed-point MATLAB simulation and Verilog simulation results.
 - **File:** `verilog_code/HW5_2/do_fir/check.m`
-- **Skills:** Simulation validation, MATLAB analysis, hardware/software correlation.
-
----
-
-## How to Run
-
-1. MATLAB simulations:
-```matlab
-% Run floating-point simulation
-run('matlab_code/filter_design.m');
-
-% Run fixed-point simulation
-run('matlab_code/fixed-point.m');
